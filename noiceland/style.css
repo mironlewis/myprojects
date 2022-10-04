@@ -1,0 +1,576 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    max-width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 0px 140px 0px 120px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.logoimg{
+    margin-top: 37px;
+    width: 134.81px;
+    height: 16.94px;
+}
+
+.menu-list{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list{
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 33px;
+    list-style: none;
+    font-family: 'Libre Franklin', sans-serif;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.list:hover{
+    color: #7e7e7e;
+    transition: 0.3s ease-in-out;
+}
+
+.listcenter{
+    margin: 33px 40px 0px 40px;
+}
+
+/* PART1 */
+
+.part1{
+    width: 100%;
+    max-width: 1200px;
+    height: 472.5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.part1-text{
+    width: 429px;
+    height: 100%;
+}
+
+.h1-part1{
+    margin: 5px 0px 0px 0px;
+    font-family: 'Libre Franklin';  
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #999999;
+}
+
+.h2-part1{
+    margin: 18px 0px 27px 0px;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.h3-part1{
+    margin: 0px 0px 28px 0px;
+    font-family: 'Source Serif Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    max-width: 419px;
+}
+
+.h4-part1{
+    margin: 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+/* PART2 */
+
+.part2{
+    width: 100%;
+    max-width: 1200px;
+    height: 970px;
+    margin: 0 auto;
+    border-bottom: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.card1-block1-part2{
+    width: 100%;
+    max-width: 387px;
+    height: 407.23px;
+    box-sizing: border-box;
+}
+
+.h1-cards-part2{
+    margin: 20px 0px 0px 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.h2-cards-part2{
+    margin: 18px 0px 15px 0px;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.h3-cards-part2{
+    margin: 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.block2-part2{
+    margin: 74px 0px 0px 0px;
+    width: 100%;
+    max-width: 1200px;
+    height: 407.23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PART3 */
+
+.part3{
+    padding-top: 90px;
+    width: 100%;
+    max-width: 1200px;
+    height: 1114px;
+    margin: 0 auto;
+    border-bottom: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+
+.h1-part3{
+    margin: 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.block1-part3{
+    margin: 30px 0px 90px 0px;
+    width: 100%;
+    max-width: 1200px;
+    height: 758px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 74px;
+}
+
+.card1-block1-part3{
+    width: 100%;
+    max-width: 285px;
+    height: 341px;
+    box-sizing: border-box;
+}
+
+.block2-part3{
+    margin: 74px 0px 69px 0px;
+    width: 100%;
+    max-width: 1200px;
+    height: 341px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.btn-part3{
+    padding: 21px 0px 21px 0px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid #000000;
+    max-width: 205px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-part3:hover{
+    color: white;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+/* PART4 */
+
+
+.part4{
+    padding-top: 90px;
+    width: 100%;
+    max-width: 1200px;
+    height: 1090px;
+    margin: 0 auto;
+}
+
+.block1-part4{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+    height: 1060px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+}
+
+.card1-block1-card4{
+    width: 100%;
+    max-width: 590px;
+    height: 493px;
+    box-sizing: border-box;
+}
+
+.h1-part4{
+    margin: 20px 0px 0px 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.h2-part4{
+    margin: 18px 0px 15px 0px;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.h3-part4{
+    margin: 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.block2-part4{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    height: 493px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 93px 120px 95px 120px;
+    box-sizing: border-box;
+    margin: 90px 0px 0px 0px;
+    height: 617px;
+    width: 100%;
+    background-color: #141414;
+}
+
+.previev-text{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    border-bottom: 1px solid #4D4D4D;
+}
+
+.h1-footer{
+    margin: 7px 0px 0px 15px;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.logo-footer{
+    width: 134.96px;
+    height: 17.01px;
+}
+
+.links-footer{
+    margin: 60.40px 0px 0px 0px;
+    width: 100%;
+    height: 294px;
+}
+
+.block1-lincks{
+    width: 100%;
+    height: 110px;
+}
+
+.text-in-block1{
+    width: 100%;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1-text-lincks{
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    height: 78px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.block1-lincks-in-text-lincks{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.h2-footer{
+    margin: 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
+
+.h2-footer:hover{
+    color: #bdbdbd;
+    transition: 0.3s ease-in-out;
+}
+
+.block2-input-in-text-lincks{
+    width: 300px;
+    height: 100%;
+}
+
+.input-div{
+    width: 100%;
+    height: 48px;
+    display: flex;
+}
+
+#input-footer{
+    padding: 0px 0px 0px 24px;
+    box-sizing: border-box;
+    width: 221px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #666666;
+}
+
+.h3-footer{
+    padding: 18px 24px 18px 24px;
+    margin: 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;  
+    color: #FFFFFF;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.h3-footer:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.block2-text-lincks{
+    margin: 35px 0px 0px 0px;
+    width: 100%;
+    height: 144px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.89fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.h4-footer{
+    margin: 14.6px 0px 0px 0px;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1280px){
+    .part1{
+        max-width: 796px;
+        height: 835px;
+        display: block;
+    }
+
+    .img-part1{
+        width: 100%;
+        height: 472.5px;
+    }
+
+    .h1-part1{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .part1-text{
+        height: 340px;
+    }
+
+    .part2{
+        max-width: 796px;
+        height: 1400px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .part3{
+        max-width: 796px;
+        height: 1955px;
+    }
+
+    .block1-part3{
+        width: 100%;
+        height: 1590px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 74px;
+    }
+
+    .card1-block1-part3{
+        width: 100%;
+        max-width: 388px;
+    }
+
+    .img-part3{
+        width: 100%;
+        height: 187px;
+    }
+
+    .part4{
+        width: 100%;
+        max-width: 796px;
+        height: 2170px;
+        margin: 0 auto;
+    }
+    
+    .block1-part4{
+        max-width: 796px;
+        height: 2125px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+    }
+
+    .img-part4{
+        width: 100%;
+        height: 387px;
+    }
+
+    .card1-block1-card4{
+        width: 100%;
+        max-width: 796px;
+        height: 493px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .block1-text-lincks{
+        height: 118px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+
+    footer{
+        padding: 93px 120px 95px 120px;
+        box-sizing: border-box;
+        margin: 90px 0px 0px 0px;
+        height: 660px;
+        width: 100%;
+    }
+
+    .block1-lincks{
+        width: 100%;
+        height: 150px;
+    }
+    
+    .h1-part3r{
+        display: none;
+    }
+}
+
