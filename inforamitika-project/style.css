@@ -277,6 +277,7 @@ footer{
 }
 
 .h2-footer{
+    text-align: right;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -284,6 +285,7 @@ footer{
 }
 
 .h3-footer{
+    text-align: right;
     margin-top: 10px;
     font-weight: 400;
     font-size: 20px;
