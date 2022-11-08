@@ -871,6 +871,10 @@ footer {
 }
 
 @media screen and (max-width: 380px) {
+
+    nav {
+        padding: 24px 0px;
+    }
     
     .nav-btn {
         display: none;
