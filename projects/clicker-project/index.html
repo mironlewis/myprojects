@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <title>Clicker</title>
+</head>
+<body>
+    <div class="popup-container">
+        <div class="pop-up">
+            <h1 class="count-text-popup">Count clicks</h1>
+            <h1 class="colvo-clicks"></h1>
+            <div class="box-popup1">
+                <button id="btn-apply">Apply</button>
+                <button id="btn-close">Delete</button>
+            </div>
+        </div>
+    </div>
+    <h1 class="h1-header">CLICKER</h1>
+    <div class="main-container">
+        <div class="container1">
+            <div class="comments-container">
+                <h1 class="h1-title">COMMENTS</h1>
+            </div>
+            <div class="option-container">
+                <div class="name_and_color-container">
+                    <input value=" " type="text" id="name-input" placeholder="Name">
+                    <input type="color" id="color-input">
+                </div>
+                <div class="message_and_send-container">
+                    <textarea value='' id="message-input" placeholder="Message"></textarea>
+                    <button id="send-button"><img src="./send.svg"></button>
+                </div>
+            </div>
+        </div>
+        <div class="clicker-area">
+            <h1 class="clicker-area-text">CLICK ME!</h1>
+        </div>
+        <div class="container3">
+            <h1 class="h1-title">TOP SCORE</h1>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
