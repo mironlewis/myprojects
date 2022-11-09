@@ -43,10 +43,59 @@ nav {
     z-index: 2;
 }
 
-#burger-menu {
+/* BURGER-MENU */
+
+#burger-menu-button {
     display: none;
     margin-left: 20px;
 }
+
+#close-burger-button {
+    display: none;
+    margin-left: 20px;
+}
+
+.burger-menu-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out 0s;   
+}
+
+.burger-menu-container.open-burger {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger-menu {
+    background-color: #181818;
+    padding: 80px 20px 0px 20px; 
+}
+
+.burger-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.social-container-burger {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto 0px auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* NAV */
 
 .nav-container { 
     padding: 0px 20px;
@@ -94,10 +143,6 @@ nav {
     background-color: #C0C0C0;
     transition: .2s ease-in-out;
 } 
-
-.active-nav-link {
-    color: #C0C0C0;
-}
 
 /* WHEN SCROLLING */
 
@@ -234,6 +279,12 @@ header {
     width: 100%;
     height: 600px;
     border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.card-part1:hover {
+    transform: scale(1.01);
+    transition: .2s ease-in-out;
 }
 
 .card1-part1{
@@ -329,7 +380,7 @@ header {
 
 /* PART 2 */
 
-.part2 {
+#part2 {
     padding-top: 260px;
     box-sizing: border-box;
     background: url(./img/bg1.png) center center no-repeat;
@@ -364,7 +415,7 @@ header {
 
 /* PART3 */
 
-.part3 {    
+#part3 {    
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -446,6 +497,15 @@ header {
     justify-content: space-between;
 }
 
+.align-logos {
+    transition: .2s ease-in-out;
+}
+
+.align-logos:hover{
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+}
+
 /* PART6 */
 
 .part6 {    
@@ -458,7 +518,7 @@ header {
 
 /* PART7 */
 
-.part7 {    
+#part7 {    
     padding: 113px 0px 108px 0px;
     background-color: black;
 }
@@ -697,7 +757,7 @@ footer {
         grid-area: 2 / 1 / 3 / 3;
     }
 
-    #burger-menu {
+    #burger-menu-button {
         display: block;
     }    
 
@@ -709,7 +769,7 @@ footer {
         margin-top: 20px;
     }
 
-    .part3 {
+    #part3 {
         display: block;
     }
 
@@ -720,6 +780,10 @@ footer {
 }
 
 @media screen and (max-width: 740px) {
+
+    header {
+        padding-top: 100px;
+    }
 
     .logos-container-part5 {
         display: grid;
@@ -790,7 +854,7 @@ footer {
 @media screen and (max-width: 600px) {
 
     header {
-        padding: 460px 20px 0px 20px;
+        padding: 200px 20px 0px 20px;
     }
 
     .settings {
@@ -838,7 +902,7 @@ footer {
         padding: 173px 20px 153px 20px;
     }
 
-    .part2 {
+    #part2 {
         padding: 260px 20px 0px 20px;
     }
 
@@ -851,7 +915,7 @@ footer {
         box-sizing: border-box;
     }
 
-    .part7 {
+    #part7 {
         padding: 113px 20px 108px 20px;
         box-sizing: border-box;
     }
@@ -882,6 +946,10 @@ footer {
 
     .nav-links {
         flex-direction: row-reverse;
+    }
+
+    .h1-part7 {
+        font-size: 28px;
     }
 
 }
