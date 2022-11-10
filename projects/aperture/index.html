@@ -9,7 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Aperture</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('5on7BIwadPBEF21kg');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('service_5nucw1v', 'template_6hpbc2q', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        };
+    </script>
     <link rel="shortcut icon" href="./img/aperture.svg">
+    <link rel="stylesheet" href="./animate.css">
 </head>
 <body>
 
@@ -19,7 +40,7 @@
             <a href="#part2"><h1 class="burger-link">Featured images</h1></a>
             <a href="#part3"><h1 class="burger-link">Gear cage</h1></a>
             <a href="#part7"><h1 class="burger-link">Contact</h1></a>
-            <a href=""><h1 class="burger-link">Get Template</h1></a>
+            <a href=""><h1 class="burger-btn">Get Template</h1></a>
             <div class="social-container-burger">
                 <a href="https://twitter.com/LewisMiron"><img src="./img/twitter.svg"></a>
                 <a href="https://www.instagram.com/mironlewiss/"><img src="./img/instagram.svg"></a>
@@ -45,11 +66,11 @@
 
     <header id="header">
         <div class="header-text_container">
-            <h1 class="h1-header">Photographer & Filmmaker</h1>
-            <h1 class="h2-header">Aperture Studios</h1>
-            <h1 class="h3-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</h1>
+            <h1 class="h1-header wow fadeInDown" data-wow-duration="1s">Photographer & Filmmaker</h1>
+            <h1 class="h2-header wow fadeInUp" data-wow-duration="1s">Aperture Studios</h1>
+            <h1 class="h3-header wow fadeInUp" data-wow-duration="1.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</h1>
         </div>
-        <div class="align_right-container">
+        <div class="align_right-container wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.2s">
             <div class="settings settings1">
                 <div class="setting-container">
                     <img src="./img/time.svg">
@@ -73,10 +94,10 @@
 
     <div class="part1">
         <div class="part1-container">
-            <h1 class="h1-part1">What we do.</h1>
-            <h1 class="h2-part1">The areas that we're specialized in.</h1>
+            <h1 class="h1-part1 wow fadeInDown" data-wow-duration="1s">What we do.</h1>
+            <h1 class="h2-part1 wow fadeInUp" data-wow-duration="1s">The areas that we're specialized in.</h1>
             <div class="cards_container-part1">
-                <div class="card-part1 card1-part1">
+                <div class="card-part1 card1-part1 wow fadeInLeft" data-wow-duration="1s"">
                     <div class="text_container1-part1">
                         <h1 class="h3-part1">Product Photography</h1>
                         <h1 class="h4-part1">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</h1>
@@ -86,7 +107,7 @@
                         </div></a>
                     </div>
                 </div>
-                <div class="card-part1 card2-part1">
+                <div class="card-part1 card2-part1 wow fadeInRight" data-wow-duration="1s">
                     <div class="text_container1-part1">
                         <h1 class="h3-part1">Architecture Photography</h1>
                         <h1 class="h4-part1">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</h1>
@@ -96,7 +117,7 @@
                         </div></a>
                     </div>
                 </div>
-                <div class="card-part1 card3-part1">
+                <div class="card-part1 card3-part1 wow fadeInLeft" data-wow-duration="1s">
                     <div class="text_container1-part1">
                         <h1 class="h3-part1">Drone Photography</h1>
                         <h1 class="h4-part1">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</h1>
@@ -106,7 +127,7 @@
                         </div></a>
                     </div>
                 </div>
-                <div class="card-part1 card4-part1">
+                <div class="card-part1 card4-part1 wow fadeInRight" data-wow-duration="1s">
                     <div class="text_container1-part1">
                         <h1 class="h3-part1">Wildlife Photography</h1>
                         <h1 class="h4-part1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</h1>
@@ -120,14 +141,14 @@
         </div>
     </div>
     <div id="part2">
-        <div class="text_pre-container-part2">
+        <div class="text_pre-container-part2 wow fadeInDown" data-wow-duration="1s">
             <div class="text_container-part2">
                 <h1 class="h1-part2">Sunset at Mount Fuji</h1>
                 <h1 class="h2-part2">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</h1>
             </div>
         </div>
         <div class="align_right-container">
-            <div class="settings settings2">
+            <div class="settings settings2 wow fadeInRight" data-wow-duration="1s">
                 <div class="setting-container">
                     <img src="./img/time.svg">
                     <h1 class="h4-header">1"</h1>
@@ -149,17 +170,17 @@
     </div>
     <div id="part3">
         <div class="left-part3">
-            <h1 class="h1-part3">The Gear cage</h1>
-            <h1 class="h2-part3">The tools that we use.</h1>
-            <h1 class="h3-part3">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</h1>
-            <a href=""><div class="btn-part1">
+            <h1 class="h1-part3 wow fadeInDown" data-wow-duration="1s">The Gear cage</h1>
+            <h1 class="h2-part3 wow fadeInUp" data-wow-duration="1s">The tools that we use.</h1>
+            <h1 class="h3-part3 wow fadeInUp" data-wow-duration="1.5s">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</h1>
+            <a href=""><div class="btn-part1 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
                 <div class="container-arrow-right"></div>
                 <h1 class="h5-part1">Check it out</h1>
             </div></a>
         </div>
         <div class="right-part3">
             <div class="align_right-container">
-                <div class="settings settings3">
+                <div class="settings settings3 wow fadeInRight" data-wow-duration="1s">
                     <div class="setting-container">
                         <img src="./img/time.svg">
                         <h1 class="h4-header">0.8"</h1>
@@ -181,14 +202,14 @@
         </div>
     </div>
     <div class="part4">
-        <div class="text_pre-container-part2">
+        <div class="text_pre-container-part2 wow fadeInDown" data-wow-duration="1s">
             <div class="text_container-part2">
                 <h1 class="h1-part2">Monstera Leafs</h1>
                 <h1 class="h2-part2">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</h1>
             </div>
         </div>
         <div class="align_right-container">
-            <div class="settings settings2">
+            <div class="settings settings2 wow fadeInRight" data-wow-duration="1s">
                 <div class="setting-container">
                     <img src="./img/time.svg">
                     <h1 class="h4-header">1/400s</h1>
@@ -209,9 +230,9 @@
         </div>
     </div>
     <div class="part5">
-        <h1 class="h1-part5">Past clients</h1>
-        <h1 class="h2-part5">Trusted by your favourite companies</h1>
-        <div class="logos-container-part5">
+        <h1 class="h1-part5 wow fadeInDown" data-wow-duration="1s">Past clients</h1>
+        <h1 class="h2-part5 wow fadeInUp" data-wow-duration="1s">Trusted by your favourite companies</h1>
+        <div class="logos-container-part5 wow fadeInUp" data-wow-duration="1s">
             <img src="./img/logo1.svg" class="align-logos logo-part5_1">
             <img src="./img/logo2.svg" class="align-logos logo-part5_2">
             <img src="./img/logo3.svg" class="align-logos logo-part5_3">
@@ -220,14 +241,14 @@
         </div>
     </div>
     <div class="part6">
-        <div class="text_pre-container-part2">
+        <div class="text_pre-container-part2 wow fadeInDown" data-wow-duration="1s">
             <div class="text_container-part2">
                 <h1 class="h1-part2">Star fall in the Himalayas</h1>
                 <h1 class="h2-part2">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</h1>
             </div>
         </div>
         <div class="align_right-container">
-            <div class="settings settings2">
+            <div class="settings settings2 wow fadeInRight" data-wow-duration="1s">
                 <div class="setting-container">
                     <img src="./img/time.svg">
                     <h1 class="h4-header">6"</h1>
@@ -249,9 +270,9 @@
     </div>
     <div id="part7">
         <div class="container-part7">
-            <h1 class="h1-part7">Need help with photography or videography?</h1>
-            <h1 class="h2-part7">We're here for you!</h1>
-            <a href=""><div class="btn-part1 btn-part7">
+            <h1 class="h1-part7 wow fadeInDown" data-wow-duration="1s">Need help with photography or videography?</h1>
+            <h1 class="h2-part7 wow fadeInUp" data-wow-duration="1s">We're here for you!</h1>
+            <a href=""><div class="btn-part1 btn-part7 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
                 <div class="container-arrow-right"></div>
                 <h1 class="h5-part1">Get in touch</h1>
             </div></a>
@@ -288,15 +309,19 @@
                     <h1 class="h1-footer">Read about all the things we do.</h1>
                 </div>
                 <div class="input-footer">
-                    <input type="text" id="inputEmail" placeholder="Enter e-mail" maxlength="40">
-                    <div class="send-button">
-                        <button id="send-email-footer-btn"></button>
-                    </div>
+                    <form action="" id="contact-form" class="form-mail">
+                        <input type="hidden" name="contact_number">
+                        <input type="text" id="inputEmail" value="bsgooodkl@gmail.com" name="reply_to" style="display: none;">
+                        <input type="text" id="inputEmail" placeholder="Enter e-mail" maxlength="40" name="reply_to">
+                        <div class="send-button">
+                            <button id="send-email-footer-btn" type="submit" value="Send"></button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="footer-part3">
                 <h1 class="h5-footer">© Aperture Photography, Inc. All rights reserved. Licensing.</h1>
-                <div class="social-container">
+                <div class="social-container wow fadeInUp" data-wow-duration="1s">
                     <a href="https://twitter.com/LewisMiron"><img src="./img/twitter.svg"></a>
                     <a href="https://www.instagram.com/mironlewiss/"><img src="./img/instagram.svg"></a>
                     <a href="https://www.facebook.com/profile.php?id=100029836923285"><img src="./img/facebook.svg"></a>
@@ -305,6 +330,7 @@
         </div>
     </footer>
 
+    <script src="./wow.min.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>

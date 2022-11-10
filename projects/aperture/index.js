@@ -1,3 +1,5 @@
+new WOW().init();
+
 let navBar = document.querySelector('.nav')
 let text_animated = document.querySelector('.h1-header')
 let busAre = document.querySelector('.busAre')
@@ -46,8 +48,8 @@ const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', (e2) => {
-        e2.preventDefault();
-        const blockID = anchor.getAttribute('href');
+    e2.preventDefault();
+    const blockID = anchor.getAttribute('href');
         document.querySelector('' + blockID).scrollIntoView({
             behavior: "smooth", 
             block: "start"
