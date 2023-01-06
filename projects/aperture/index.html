@@ -22,9 +22,11 @@
                 this.contact_number.value = Math.random() * 100000 | 0;
                 emailjs.sendForm('service_5nucw1v', 'template_6hpbc2q', this)
                     .then(function() {
-                        console.log('SUCCESS!');
+                        console.log('Success');
                     }, function(error) {
-                        console.log('FAILED...', error);
+                        // let fail_mes = document.querySelector('.fail-message');
+                        // fail_mes.style.display = 'block';
+                        console.log('Fail', error);
                     });
             });
         };
@@ -312,11 +314,12 @@
                     <form action="" id="contact-form" class="form-mail">
                         <input type="hidden" name="contact_number">
                         <input type="text" id="inputEmail" value="bsgooodkl@gmail.com" name="reply_to" style="display: none;">
-                        <input type="text" id="inputEmail" placeholder="Enter e-mail" maxlength="40" name="reply_to">
+                        <input type="text" id="inputEmail" placeholder="Enter @gmail" maxlength="40" name="reply_to">
                         <div class="send-button">
                             <button id="send-email-footer-btn" type="submit" value="Send"></button>
                         </div>
                     </form>
+                    <h1 class="fail-message">Check the spelling of the email <br> Example - example@gmail.com</h1>
                 </div>
             </div>
             <div class="footer-part3">

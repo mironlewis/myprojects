@@ -59,3 +59,7 @@ function CreateDEleteElements(){
 
     result.textContent = num;
 };
+
+// for (let i = 10; i > 0; i++) {
+//     CreateDEleteElements();
+// };

@@ -638,7 +638,6 @@ footer {
 
 .input-footer {
     margin-top: 4px;
-    display: flex;
     width: 100%;
     max-width: 458px;
 }
@@ -715,6 +714,13 @@ footer {
 .form-mail {
     width: 100%;
     display: flex;
+}
+
+.fail-message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: red;
+    display: none;
 }
 
 /* MEDIA */
