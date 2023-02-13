@@ -1,0 +1,151 @@
+/* MEDIA */
+
+@media screen and (max-width: 1350px)  {
+
+    .slider-ogranichitel-part3 {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1200px)  {
+
+    .corona-img-part1 {
+        max-width: 50%;
+        height: 100%;
+    }
+
+    .footer-menu {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 800px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px)  {
+
+    .part1-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container-part1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hr-part1 {
+        width: 100px;
+    }
+
+    .lateral-container {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .part2 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text-container-part2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-container-part4 {
+        flex-direction: column;
+    }
+    
+    .h1-header {
+        font-size: 64px;
+    }
+
+    .slider-content1 {
+        margin-left: 50px;
+    }
+
+    .slider-container-header {
+        top: 10%;
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    .main-container {
+        padding: 0px 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer-menu {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .card-container-part5 {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    #burger_menu-btn {
+        display: block;
+    }
+
+    .h1-navbar {
+        display: none;
+    }
+
+    .media600 {
+        position: fixed;
+        display: block;
+        z-index: 10;
+    }
+
+    .links_container-navbar::before {
+        content: '';
+        background-image: url('./img/logo.png');
+        width: 158px;
+        height: 96px;
+        margin: 0 auto;
+        position: absolute;
+        left: 80px;
+        z-index: 5;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .burger-content {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .btn-container-part6 {
+        padding: 15px 25px;
+    }
+
+    .h1-header {
+        font-size: 42px;
+        line-height: 51px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}

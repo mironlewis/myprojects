@@ -1,0 +1,204 @@
+/* GLOBAL */
+
+* {
+    font-family: 'Montserrat';
+    margin: 0px;
+    font-weight: 400;
+    color: white;
+}
+
+html {
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* POPUP */
+
+.popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(131, 131, 131, 0.4);
+    backdrop-filter: blur(20px);
+    overflow: auto;
+}
+
+.popup {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(131, 131, 131, 0.4);
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yes {
+   width: 160px; 
+   height: 40px;
+   background-color: rgba(131, 131, 131, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: .2s ease-in-out;
+}
+
+.yes:hover {
+   cursor: pointer;
+   background-color: rgba(146, 146, 146, 0.8);
+   transition: .2s ease-in-out;
+}
+
+.no {
+   width: 160px; 
+   height: 40px;
+   background-color: rgba(131, 131, 131, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: .2s ease-in-out;
+}
+
+.no:hover {
+   cursor: pointer;
+   background-color: rgba(146, 146, 146, 0.8);
+   transition: .2s ease-in-out;
+}
+
+/* MAIN */
+
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 500px;
+    background-color: rgba(146, 146, 146, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.ava_name-container {
+    text-align: center;
+    width: 100%;
+}
+
+.ava {
+    display: flex;
+    margin: 0px auto 0px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.username-ava {
+    margin-top: 20px;
+}
+
+.subtitle-ava {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.text-ava {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.sNetworks_hobbies-container {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.accordeon-container {
+    width: 100%;
+}
+
+.accordeon-button {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(146, 146, 146, 0.4);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    padding: 8px 10px 8px 10px;
+    box-sizing: border-box;
+    transition: .2s ease-in-out;
+}
+
+.accordeon-button:hover {
+    cursor: pointer;
+    background-color: rgba(146, 146, 146, 0.8);
+    transition: .2s ease-in-out;
+}
+
+.opener {
+    
+}
+
+.accordeon-content {
+    overflow: hidden;
+    max-height: 0px;
+    transition: .2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.div-contact {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(146, 146, 146, 0.4);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+    transition: .2s ease-in-out;
+}
+
+.div-contact:hover {
+    cursor: pointer;
+    background-color: rgba(146, 146, 146, 0.8);
+    transition: .2s ease-in-out;
+    transform: scale(1.03);
+}
+
+.img-tg {
+
+}
+
+.contactMe {
+    font-size: 24px;
+}
