@@ -1,0 +1,151 @@
+@media screen and (max-width: 1600px) {
+    
+    body {
+        margin: 0px 20px;
+        box-sizing: border-box; 
+    }
+
+    .part1 {
+        display: none;
+    }
+
+    .path-header {
+        display: none;
+    }
+
+    .img-text-container-part2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container2-part2 {
+        display: flex;
+        gap: 20px;
+        align-items: flex-end;
+    }
+
+    .part2-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-crystal {
+        right: 0%;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    
+    body {
+        margin: 0px 20px;
+        box-sizing: border-box; 
+    }
+
+    .card-content-part3 {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .h2-part3 {
+        bottom: 0px;
+        left: -50%;
+    }
+
+    .h3-part3 {
+        text-align: center;
+    }
+
+    .header-crystal {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    nav-bar {
+        padding: 50px 20px 20px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #1a2a33cc;
+        backdrop-filter: blur(50px);
+    }
+
+    burger-menu {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+
+    #burger-menu-btn {
+        display: block;
+    }
+
+    .h1-header {
+        font-size: 58px;
+    }
+
+    .footer-container-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .h1-part2 {
+        text-align: center;
+    }
+
+    .h1-footer {
+        text-align: center;
+    }
+
+    .burger-menu-btn {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 580px) {
+    
+    .contact-container {
+        display: none;
+    }
+
+    .btn_text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h2-header {
+        text-align: center;
+    }
+
+    .text-container2-part2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-container-part2 {
+        flex-direction: column;
+        margin: 50px 0px 0px 0px;
+    }
+
+    .line-part2 {
+        display: none;
+    }
+
+    .h2-part2 {
+        text-align: center;
+    }
+
+}
