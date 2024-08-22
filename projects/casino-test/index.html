@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Ludik</title>
+</head>
+<body>
+    <header>
+        <div class="logo-and-menu">
+            <div class="logo_container">
+                <img src="./logo.svg">
+            </div>
+            <div class="menu_container">
+                <a href="#" class="link-game" style="text-decoration: underline; font-weight: 500;">Classic</a>
+                <a href="#" class="link-game" style="color: #5E5E5E;">PvP</a>
+            </div>
+        </div>
+        <a href="#"><div class="user_profile">
+            <div class="name-and-amount">
+                <h1 id="user_name" class="user_name">mironlewis</h1>
+                <div class="amount-of-user-cash">
+                    <h1 id="user_cash">500.42<h1 class="hryvna">&nbsp;₴</h1></h1>
+                </div>
+            </div>
+            <img src="./ava.jpg" class="user_avatar" id="user_avatar">
+        </div></a>
+    </header>
+    <div class="game_container">
+        <div class="game-bet_container">
+            <div class="data-input_container">
+                <div class="bet_container">
+                    <h1 class="h1-body">Amount</h1>
+                    <input type="text" id="amount_number" class="input_bet" placeholder="0.01 to 200k">
+                </div>
+                <div class="bet_container">
+                    <h1 class="h1-body">Win Percent</h1>
+                    <input type="text" id="win-percent_number" class="input_bet" placeholder="1 to 95">
+                </div>
+            </div>
+            <div class="result_container">
+                <button id="play-bet">Play</button>
+                <div class="sum-of-win_container">
+                    <h1 id="win-amount">0 ₴</h1>
+                    <h1 class="h1-body">Possible winnings</h1>
+                </div>
+            </div>
+        </div>
+        <div class="game-histoty_container">
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

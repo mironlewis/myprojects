@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/shortcut.png" type="image/png">
+    <title>Clock</title>
+</head>
+<body>
+
+    <div class="clock_date-container">
+        <h1 class="clock">21:38</h1>
+        <h1 class="date">Tuesday  14.03.2023</h1>
+    </div>
+
+    <div class="bottom-block">
+        <div class="bottom-container">
+            <div class="bottom-container-opener">
+                <h1 class="name-bottom-container">Weather</h1>
+                <img src="./img/open.svg" class="rotate-icon">
+            </div>
+            <div class="bottom-container-content">
+                <h1 class="coomingsoon">Cooming Soon</h1>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="bottom-container-opener">
+                <h1 class="name-bottom-container">ToDo</h1>
+                <img src="./img/open.svg" class="rotate-icon">
+            </div>
+            <div class="bottom-container-slider">
+                <div class="bottom-container-content">
+                    <div class="completed-add-todo-container">
+                        <button id="completed-button">Completedㅤ0</button>
+                        <button id="add-todo-button"><img src="./img/add-todo.png" style="width: 14px;"></button>
+                    </div>
+                    <h1 class="h1">Write Task</h1>
+                    <input type="text" id="todo-input" value="">
+                    <div class="todos-container">
+                        <h1 class="h2">You have no assignments</h1>
+                    </div>
+                </div>
+                <div class="completed-container-content">
+                    <div class="back-delete_all-container">
+                        <button id="back-btn"></button>
+                        <button id="remove_all-btn"></button>
+                    </div>
+                    <div class="completed-content">
+                        <h1 class="h3">You have no completed tasks</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>

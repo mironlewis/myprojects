@@ -1,0 +1,181 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #292E32;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    border: 0px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* HEADER //////////////////////////// */
+
+header {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-and-menu {
+    display: flex;
+    gap: 60px;
+}
+
+.logo_container {
+    padding: 15px;
+    background-color: #33393F;
+    border-radius: 18px;
+    height: 50px;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.user_profile {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #33393F;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+    border-radius: 18px;
+}
+
+.name-and-amount {
+
+}
+
+.user_name {
+    font-size: 16px;
+}
+
+.amount-of-user-cash {
+    display: flex;
+    justify-content: right;
+}
+
+#user_cash {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 16px;
+    color: #898989;
+}
+
+.hryvna {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 16px;
+    color: #898989;
+}
+
+.user_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+}
+
+/* BODY //////////////////////////// */
+
+.game_container {
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.game-bet_container {
+
+}
+
+.data-input_container {
+    display: flex;
+    gap: 50px;
+}
+
+.bet_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.h1-body {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.input_bet {
+    width: 200px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: #33393F;
+}
+
+.result_container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#play-bet {
+    width: 100px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: #33393F;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transition: .15s ease-in-out;
+}
+
+#play-bet:hover {
+    cursor: pointer;
+    background-color: #383f47;
+    transition: .15s ease-in-out;
+}
+
+.sum-of-win_container {
+    text-align: center;
+}
+
+#win-amount {
+    font-weight: 500;
+    color: #5985D4;
+    font-size: 64px;
+}
