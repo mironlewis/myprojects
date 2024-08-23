@@ -44,15 +44,23 @@ document.getElementById('play-bet').addEventListener('click', () => {
             // RANDOMIZER ///////////////////
 
             let random = Math.ceil(Math.random()*100);
-            console.log(random)
+            let randomForFive = Math.ceil(Math.random()*5);
 
             // WIN CASHER ///////////////////
 
             if (getPercent.value >= random) {
-                getUserCash = (getUserCash + (cashWin - getAmount.value)).toFixed(2);
-                getUserCash = Number(getUserCash);
-                getUserCashText.innerHTML = getUserCash;
-                console.log(getUserCash);
+                if (random <= 5 && randomForFive == 5) {
+                    getUserCash = (getUserCash + (cashWin - getAmount.value)).toFixed(2);
+                    getUserCash = Number(getUserCash);
+                    getUserCashText.innerHTML = getUserCash;
+                    console.log(random)
+                    console.log(randomForFive);
+                } else if (random > 5) {
+                    getUserCash = (getUserCash + (cashWin - getAmount.value)).toFixed(2);
+                    getUserCash = Number(getUserCash);
+                    getUserCashText.innerHTML = getUserCash;
+                    console.log(getUserCash);
+                };
             } else {
                 getUserCash = (getUserCash - getAmount.value).toFixed(2);
                 getUserCash = Number(getUserCash);
