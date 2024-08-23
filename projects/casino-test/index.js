@@ -48,7 +48,7 @@ document.getElementById('play-bet').addEventListener('click', () => {
 
             // WIN CASHER ///////////////////
 
-            if (getPercent.value/1.1 >= random) {
+            if (getPercent.value >= random) {
                 getUserCash = (getUserCash + (cashWin - getAmount.value)).toFixed(2);
                 getUserCash = Number(getUserCash);
                 getUserCashText.innerHTML = getUserCash;
