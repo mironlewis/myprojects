@@ -3,7 +3,11 @@ let getWinAmountText = document.getElementById('win-amount');
 
 let getAmount = document.getElementById('amount_number');
 let getPercent = document.getElementById('win-percent_number');
-let getUserCash = Number(getUserCashText.innerHTML);
+
+// LOAD FROM LOCAL STORAGE
+
+let getUserCash = Number(localStorage.getItem('balance')) || 1000;
+getUserCashText.innerHTML = getUserCash.toFixed(2);
 
 // CHECK RANGE OF INPUT ///////////////////
 
@@ -13,25 +17,52 @@ document.addEventListener('DOMContentLoaded', () => {
         if (getAmount.value < 0 || getAmount.value > 200000) {
             getAmount.value = '';
         };
-        getWinAmountText.innerHTML = `${getAmount.value*2} ₴`;
+        updateResult();
     });
     getPercent.addEventListener('input', (drob) => {
         drob.target.value = drob.target.value.replace(/\D+/g, "");
         if (1 > getPercent.value || getPercent.value > 95) {
             getPercent.value = '';
         };
+        updateResult();
     });
 });
+
+let cashWin = 0;
+
+function updateResult() {
+    cashWin = getAmount.value / (getPercent.value/100);
+    getWinAmountText.innerHTML = `${cashWin.toFixed(2)} ₴`;
+};
 
 // PLAY ACTION ///////////////////
 
 document.getElementById('play-bet').addEventListener('click', () => {
     if (getAmount.value && getPercent.value && getAmount.value > 0) {
         if (getAmount.value <= getUserCash) {
-            getUserCash = (getUserCash - getAmount.value).toFixed(2); 
-            getUserCash = Number(getUserCash);
-            getUserCashText.innerHTML = getUserCash;
-            console.log(getUserCash);
+
+            // RANDOMIZER ///////////////////
+
+            let random = Math.ceil(Math.random()*95);
+
+            // WIN CASHER ///////////////////
+
+            if (getPercent.value >= random) {
+                getUserCash = (getUserCash + (cashWin - getAmount.value)).toFixed(2);
+                getUserCash = Number(getUserCash);
+                getUserCashText.innerHTML = getUserCash;
+                console.log(getUserCash);
+            } else {
+                getUserCash = (getUserCash - getAmount.value).toFixed(2);
+                getUserCash = Number(getUserCash);
+                getUserCashText.innerHTML = getUserCash;
+                console.log(getUserCash);
+            };
+
+            // SAVE TO LS 
+
+            localStorage.setItem('balance', getUserCash);
+
         }else {
             console.log('You dont have enought money!');
         };
@@ -39,3 +70,4 @@ document.getElementById('play-bet').addEventListener('click', () => {
         console.log('Write a numbers');
     };
 });
+
