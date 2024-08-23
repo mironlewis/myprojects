@@ -43,11 +43,12 @@ document.getElementById('play-bet').addEventListener('click', () => {
 
             // RANDOMIZER ///////////////////
 
-            let random = Math.ceil(Math.random()*95);
+            let random = Math.ceil(Math.random()*100);
+            console.log(random)
 
             // WIN CASHER ///////////////////
 
-            if (getPercent.value >= random) {
+            if (getPercent.value/1.1 >= random) {
                 getUserCash = (getUserCash + (cashWin - getAmount.value)).toFixed(2);
                 getUserCash = Number(getUserCash);
                 getUserCashText.innerHTML = getUserCash;
